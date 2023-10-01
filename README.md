@@ -1,6 +1,6 @@
-# Todo list application using ReactJS with hooks (useState, useEffect, useContext, useReducer) - https://www.youtube.com/playlist?list=PLqKQF2ojwm3n6YO3BDSQIg35GGKn_ImFD
-
 # Getting Started with Create React App
+
+Todo list application using ReactJS with hooks (useState, useEffect, useContext, useReducer) - https://www.youtube.com/playlist?list=PLqKQF2ojwm3n6YO3BDSQIg35GGKn_ImFD
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
