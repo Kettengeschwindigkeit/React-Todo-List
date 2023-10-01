@@ -1,14 +1,24 @@
-export default function(state, action) {
-    switch(action.type) {
+export default function (state, action) {
+    switch (action.type) {
         case 'add':
-            return [
-                ...state,
-                {
-                    id: Date.now(),
-                    title: action.payload,
-                    completed: false
-                }
-            ]
+            if (state) {
+                return [
+                    ...state,
+                    {
+                        id: Date.now(),
+                        title: action.payload,
+                        completed: false
+                    }
+                ]
+            } else {
+                return [
+                    {
+                        id: Date.now(),
+                        title: action.payload,
+                        completed: false
+                    }
+                ]
+            }
         case 'toggle':
             return state.map(todo => {
                 if (todo.id === action.payload) {

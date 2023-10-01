@@ -14,6 +14,7 @@ export default function App() {
   useEffect(() => {
     document.addEventListener('click', handleClick)
     localStorage.setItem('todos', JSON.stringify(state))
+
     return () => {
       document.removeEventListener('click', handleClick)
     }
